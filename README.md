@@ -1,2 +1,3 @@
-# temp-site
-Site temporário pra redirecionar para as redes sociais do PHPMG.
+# PHPMG site
+
+Site oficial do PHP-MG. Atualmente com layout temporário enquanto reformulamos o novo site.
