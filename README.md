@@ -9,6 +9,6 @@ You must have [Vagrant](https://vagrantup.com/) and [Composer](http://getcompose
 
 This will create a Vagrant Virtual Machine. To access it, just run `vagrant ssh`.
 
-To access the website, edit your `/etc/hosts` file, adding this: `192.168.10.12 site.phpmg.dev`
+To access the website, edit your `/etc/hosts` file, adding this: `192.168.10.12 website.phpmg.dev`
 
-Go to [site.phpmg.dev](http://site.phpmg.dev/) at your browser.
+Go to [website.phpmg.dev](http://website.phpmg.dev/) at your browser.
