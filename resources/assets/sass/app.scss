@@ -1,2 +1,58 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$font-stack: Helvetica, sans-serif;
+$black: #000000;
+$red: #e74c3c;
+$light-gray: #ecf0f1;
+$white: #ffffff;
+
+body {
+  font: $font-stack;
+  color: $black;
+}
+
+.menu {
+  text-align: center;
+  background: $red;
+  padding: 20px;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.home-header {
+  text-align: center;
+  background: $light-gray;
+  padding: 20px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.content {
+  h2 {
+    color: $red;
+  }
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: bold;
+  background: $light-gray;
+  color: $gray;
+  padding: 20px;
+  text-align: center;
+}

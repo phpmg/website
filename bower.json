@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "description": "PHPMG website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/luizpedone/phpmg-website",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
