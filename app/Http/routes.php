@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('website/pages/home');
-});
+Route::get('/', [
+    'uses' => '\App\Http\Controllers\HomeController@indexAction',
+    'as' => 'website.home'
+]);
+
+Route::get('eventos', [
+    'uses' => '\App\Http\Controllers\EventsController@indexAction',
+    'as' => 'website.events'
+]);
+
+Route::get('organizadores', [
+    'uses' => '\App\Http\Controllers\OrganizersController@indexAction',
+    'as' => 'website.organizers'
+]);
+
+Route::get('contato', [
+    'uses' => '\App\Http\Controllers\ContactController@indexAction',
+    'as' => 'website.contact'
+]);

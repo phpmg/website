@@ -12,73 +12,41 @@
                 <div class="col-sm-12">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="{{ URL::route('website.home') }}">Home</a>
                         </li>
                         <li>
-                            <a href="#">Eventos</a>
+                            <a href="{{ URL::route('website.events') }}">Eventos</a>
                         </li>
                         <li>
-                            <a href="#">Organizadores</a>
+                            <a href="{{ URL::route('website.organizers') }}">Organizadores</a>
                         </li>
                         <li>
-                            <a href="#">Contato</a>
+                            <a href="{{ URL::route('website.contact') }}">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home-header">
+
+    <section class="header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="{{ asset('assets/img/phpmg-logo.png') }}">
+                    @if(Request::route()->getName() == 'website.home')
+                        <img src="{{ asset('assets/img/phpmg-logo.png') }}" />
+                    @else
+                        <img src="{{ asset('assets/img/phpmg.png') }}" />
+                    @endif
                 </div>
             </div>
         </div>
     </section>
 
     <section class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <h2 class="text-center">Próximos eventos</h2>
-
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <td>
-                                Evento
-                            </td>
-                            <td>
-                                Data
-                            </td>
-                            <td>
-                                Local
-                            </td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>4o PHPMG Talks</b></td>
-                                <td>29/04/2016</td>
-                                <td>Take.net</td>
-                                <td><a>+ Info</a></td>
-                            </tr>
-                            <tr>
-                                <td><b>beer.php</b></td>
-                                <td>02/05/2016</td>
-                                <td>Rock Esporte Bar</td>
-                                <td><a>+ Info</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        @yield('content')
     </section>
 
-    @yield('content')
 
     <section class="footer">
         <div class="container">
