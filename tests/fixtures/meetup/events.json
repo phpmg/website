@@ -1,0 +1,74 @@
+[
+  {
+    "created": 1460987923000,
+    "id": "230462115",
+    "name": "4º PHPMG Talks",
+    "rsvp_limit": 50,
+    "status": "upcoming",
+    "time": 1462035600000,
+    "updated": 1460988254000,
+    "utc_offset": -10800000,
+    "waitlist_count": 0,
+    "yes_rsvp_count": 46,
+    "venue": {
+      "id": 24325285,
+      "name": "Take.net",
+      "lat": -19.922983169555664,
+      "lon": -43.96078872680664,
+      "repinned": false,
+      "address_1": "Rua Paraguaçu, 83 - Pilotis - Prado",
+      "city": "Belo Horizonte",
+      "country": "br",
+      "localized_country_name": "Brazil"
+    },
+    "group": {
+      "created": 1415893084000,
+      "name": "PHPMG",
+      "id": 18186491,
+      "join_mode": "open",
+      "lat": -19.920000076293945,
+      "lon": -43.939998626708984,
+      "urlname": "PHP-MG",
+      "who": "Programmers"
+    },
+    "link": "http://www.meetup.com/PHP-MG/events/230462115/",
+    "description": "<p>4º PHPMG Talks</p> <p>Nesse evento, teremos 2 palestras:</p> <p>- Data: 30 de abril, às 14:00<br/>- Local: <a href=\"http://take.net\">Take.net</a> - Rua Paraguaçu, 83 - Pilotis - Prado, Belo Horizonte<br/>- Programação:<br/>14:00 Apresentações e avisos<br/>14:20 Palestra Júnior Grossi<br/>15:20 Palestra Erick Carvalho<br/>16:20 Coffee break</p> <p>AVISO: caso não possa comparecer, troque seu RSVP o quanto antes para que dê tempo de outra pessoa ir em seu lugar. O espaço é limitado e esperamos que o máximo de pessoas possível possa participar :)</p> ",
+    "visibility": "public"
+  },
+  {
+    "created": 1450808189000,
+    "id": "kdccnlyvhbnb",
+    "name": "beer.php",
+    "status": "upcoming",
+    "time": 1462919400000,
+    "updated": 1450808189000,
+    "utc_offset": -10800000,
+    "waitlist_count": 0,
+    "yes_rsvp_count": 12,
+    "venue": {
+      "id": 23140342,
+      "name": "Rock Esporte Bar",
+      "lat": -19.935779571533203,
+      "lon": -43.93096923828125,
+      "repinned": false,
+      "address_1": "Avenida Getulio Vargas 809",
+      "city": "Belo Horizonte",
+      "country": "br",
+      "localized_country_name": "Brazil"
+    },
+    "group": {
+      "created": 1415893084000,
+      "name": "PHPMG",
+      "id": 18186491,
+      "join_mode": "open",
+      "lat": -19.920000076293945,
+      "lon": -43.939998626708984,
+      "urlname": "PHP-MG",
+      "who": "Programmers"
+    },
+    "link": "http://www.meetup.com/PHP-MG/events/227575626/",
+    "description": "<p>Encontro informal mensal do PHP-MG.</p> <p>Bora tomar uma cerveja e jogar conversa fora sobre PHP, a vida e tudo mais :D</p> ",
+    "how_to_find_us": "Look for drunk elephants in the room",
+    "visibility": "public"
+  }
+]
