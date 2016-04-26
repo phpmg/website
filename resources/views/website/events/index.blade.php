@@ -21,18 +21,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td><b>4o PHPMG Talks</b></td>
-                        <td>29/04/2016</td>
-                        <td>Take.net</td>
-                        <td><a>+ Info</a></td>
-                    </tr>
-                    <tr>
-                        <td><b>beer.php</b></td>
-                        <td>02/05/2016</td>
-                        <td>Rock Esporte Bar</td>
-                        <td><a>+ Info</a></td>
-                    </tr>
+                    @foreach($events as $event)
+                        <tr>
+                            <td><b>{{ $event->name }}</b></td>
+                            <td>{{ $event->start_at->format('d/m/Y H:i') }}</td>
+                            <td>{{ $event->venue->name }}</td>
+                            <td><a href="{{ $event->meetup_url }}">+ Info</a></td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

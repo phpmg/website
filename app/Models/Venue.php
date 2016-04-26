@@ -5,23 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Event
+ * Class Venue
  */
-class Event extends Model
+class Venue extends Model
 {
     /**
-     * @var array
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    protected $dates = [
-        'start_at',
-    ];
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function venue()
+    public function events()
     {
-        return $this->belongsTo(Venue::class, 'venue_id', 'id');
+        return $this->hasMany(Event::class, 'venue_id', 'id');
     }
 
     /**

@@ -14,7 +14,8 @@ class CreateEventsTable extends Migration
     {
         Schema::create('venues', function ($table) {
             $table->increments('id');
-            $table->integer('meetup_id');
+            $table->string('meetup_id');
+            $table->string('name');
             $table->float('lat');
             $table->float('long');
             $table->string('address', 400);
@@ -25,6 +26,7 @@ class CreateEventsTable extends Migration
 
         Schema::create('events', function ($table) {
             $table->increments('id');
+            $table->string('meetup_id');
             $table->string('name', 200);
             $table->integer('venue_id')->unsigned();
             $table->foreign('venue_id')->references('id')->on('venues');
