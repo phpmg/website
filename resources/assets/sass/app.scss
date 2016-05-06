@@ -1,0 +1,81 @@
+
+// Font Awesome
+@import "../../../bower_components/components-font-awesome/scss/font-awesome";
+
+// Bootstrap
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$font-stack: Helvetica, sans-serif;
+$black: #000000;
+$red: #c52f33;
+$light-gray: #ecf0f1;
+$white: #ffffff;
+
+body {
+  font: $font-stack;
+  color: $black;
+}
+
+.menu {
+  text-align: center;
+  background: $red;
+  padding: 20px;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.header {
+  text-align: center;
+  background: $light-gray;
+  padding: 20px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    color: $red;
+  }
+}
+
+.social-networks {
+  padding: 10px;
+
+  a {
+    color: $red;
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: bold;
+  background: $light-gray;
+  color: $gray;
+  padding: 20px;
+  text-align: center;
+}
